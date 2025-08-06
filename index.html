@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menos é Mais</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="p-4">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/logo-menosemais.png" alt="Logo Menos é Mais" class="logo">
+      <ul class="nav mt-3">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+     <div id="acessibilidade" class="menu-acessibilidade">
+  <button id="botao-acessibilidade" class="btn btn-outline-light fw-bold rotacao-botao" aria-expanded="false">
+    Acessibilidade
+  </button>
+  <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+    <button id="aumentar-fonte" class="btn btn-light fw-bold">A+</button>
+    <button id="diminuir-fonte" class="btn btn-light fw-bold">A-</button>
+    <button id="alterna-contraste" class="btn btn-light fw-bold" title="Alto Contraste">
+      <i class="bi bi-shadows"></i>
+    </button>
+    <button id="alterna-tema" class="btn btn-light fw-bold" title="Modo Claro/Escuro">
+      <i class="bi bi-palette-fill"></i>
+    </button>
+  </div>
+</div>
+
+  </header>
+
+  <main class="container my-5">
+    <section id="inicio" class="text-center text-white p-5 fundo-hero">
+      <h1 class="display-4 fw-bold">Bem-vindo ao universo do grupo Menos é Mais</h1>
+      <p class="lead mt-3">Pagode com alma, história e muita vibe!</p>
+      <a href="#sobre" class="btn btn-warning btn-lg rounded-pill mt-4 fw-semibold">Conheça mais</a>
+    </section>
+
+    <section id="sobre" class="my-5 text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2>Sobre o grupo</h2>
+          <p>O Menos é Mais é um dos maiores nomes do pagode atual no Brasil. Formado em Brasília, o grupo ganhou o coração dos brasileiros com releituras e composições que misturam tradição com inovação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="text-center py-5 bg-light">
+      <h2>Galeria</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <img src="img/menos1.jpg" class="img-fluid" alt="Show Menos é Mais 1">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/menos2.jpg" class="img-fluid" alt="Show Menos é Mais 2">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/menos3.png" class="img-fluid" alt="Bastidores Menos é Mais">
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5">
+      <div class="container d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 p-4 bg-white rounded-4 shadow formulario">
+          <h2 class="mb-4 text-center">Fale com a equipe</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" class="form-control" placeholder="Seu nome" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Seu email" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-warning btn-lg rounded-pill">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 bg-dark text-white">
+    <p class="mb-2">Siga o Menos é Mais nas redes sociais:</p>
+    <i class="bi bi-instagram mx-2"></i>
+    <i class="bi bi-youtube mx-2"></i>
+    <i class="bi bi-tiktok mx-2"></i>
+    <p class="mt-3 small">Projeto fictício sem fins comerciais. Inspirado no grupo Menos é Mais.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
